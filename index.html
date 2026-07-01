@@ -86,7 +86,7 @@
         Ex: https://youtu.be/dQw4w9WgXcQ → ID = dQw4w9WgXcQ
       -->
       <iframe id="yt-iframe" src="" title="Prévia Go Espanhol"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
     </div>
   </div>
@@ -458,7 +458,7 @@
   var iframe = document.getElementById('yt-iframe');
 
   function openModal(){
-    iframe.src = 'https://www.youtube.com/embed/' + YT_ID + '?autoplay=1&rel=0';
+    iframe.src = 'https://www.youtube.com/embed/' + YT_ID + '?si=hPDKoGuZI7hWUa3M&autoplay=1&rel=0';
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
